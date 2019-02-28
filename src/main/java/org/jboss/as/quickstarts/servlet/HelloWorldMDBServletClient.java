@@ -70,11 +70,6 @@ import javax.servlet.http.HttpServletResponse;
  *
  */
 @WebServlet("/HelloWorldMDBServletClient")
-@ServletSecurity(
-        value = @HttpConstraint(
-                rolesAllowed = {
-                  "secured"
-                }))
 public class HelloWorldMDBServletClient extends HttpServlet {
 
   private static final long serialVersionUID = -8314035702649252239L;
